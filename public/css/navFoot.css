@@ -1,0 +1,164 @@
+/* NAVBAR  */
+.logo-img{
+    height: 8vh;
+    width: 8vw;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+
+.nav-bgc{
+    width: 100vw !important;
+    height: 5rem;
+    background-color: #6674CC;
+    /* border-bottom: 2px solid black; */
+    position: fixed !important;
+    top: 0;
+    z-index: 1
+}
+
+.nav-link{
+    margin: 0.8rem;
+    font-weight: 600;
+    /* background-color: #E2E2E2; */
+    border-radius: 10px;
+    color: black !important ;
+    text-align: center;
+    margin: 5px;
+}
+
+.nav-link:hover{
+    transform: scale(1.2);
+}
+
+.nav-link:active{
+    background-color: #E8E8E8;
+    color: #222222 !important;
+}
+
+.navbar-nav a{
+    color: white !important;
+}
+
+@media screen and (max-width: 600px){
+    .navbar {
+        width: 100vw;
+        height: 4rem !important;
+      }
+    .navbar-collapse{
+        background-color: #6674CC;
+        max-height: 100vh;
+        width: 100vw;
+        /* opacity: 0.5; */
+    }
+    .nav-link{
+        /* margin: 0px; */
+    }
+
+    .nav-bgc{
+        width: 100vw !important;
+        padding: 0;
+        margin: 0;
+        /* height: 4rem; */
+    }
+}
+
+
+                    /* FOOTER  */
+.f-info-link{
+    margin-left: 1.5rem;
+}
+.f-info-link a{
+    text-decoration: none;
+    color: white;
+}
+
+.f-info-link a:hover{
+    text-decoration: underline ;
+    color: white ;
+}
+
+.footer-info{
+    height: 4rem;
+    background-color:#6674CC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.f-info-social{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+.f-info-social:hover{
+    cursor: pointer;
+}
+
+.f-info-social i{
+    color: white;
+    margin: 0.3rem;
+}
+.f-info-social i:hover{
+    transform: scale(1.3);
+}
+
+.f-info-link a{
+    padding: 10px;
+}
+
+.cop-right{
+color: white;
+}
+
+
+@media screen and (max-width: 600px){
+    .footer-info{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .f-info-social{
+        font-size: 1rem;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .f-info-social i:hover{
+        transform: scale(1.2);
+    }
+
+    .f-info-link{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .f-info-link a{
+        padding: 4px;
+        font-size: 0.9rem;
+    }
+    .cop-right{
+        font-size: 0.9rem;
+    }
+}
+
+/* Flash message */
+
+@media screen and (max-width: 600px){
+.success-flash{
+     font-size: small;
+     width: 100%;
+     margin: 0 0 10px 0;
+ }
+
+ .error-flash{
+    font-size: small;
+    width: 100%;
+    margin: 0 0 10px 0;
+ }
+
+}

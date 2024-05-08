@@ -1,0 +1,88 @@
+<% layout("/layouts/boilerplate") -%>
+
+    <body>
+        <div class="row">
+            <div class="col-8 offset-2">
+
+                <div>
+                    <h3 class="heading">Edit your details</h3>
+                </div>
+
+                <form method="POST" action="/listings/<%=listing._id%>?_method=PUT" novalidate class="needs-validation" enctype="multipart/form-data">
+
+                    <div class="row">
+                        <div class="mb-2 col-6">
+                            <label for="typeName" class="form-label plce">TypeName</label>
+                            <input type="text" value="<%=listing.typeName%>" name="listing[typeName]"
+                                class="form-control" required>
+                        </div>
+
+                        <br>
+                        <div class="mb-2 col-6">
+                            <label for="ownName" class="form-label plce">ownName</label>
+                            <input type="text" value="<%=listing.ownName%>" name="listing[ownName]"
+                                class="form-control" required>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="mb-2 col-6">
+                            <label for="price" class="form-label plce">price</label>
+                            <input type="number" value="<%=listing.price%>" name="listing[price]" class="form-control" required>
+                        </div>
+                        <br>
+
+                        <div class="mb-2 col-6">
+                            <label for="state" class="form-label plce">state</label>
+                            <input type="text" value="<%=listing.state%>" name="listing[state]" class="form-control" required>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="mb-2 col-6">
+                            <label for="location" class="form-label plce">Current location</label>
+                            <input type="text" value="<%=listing.location%>" name="listing[location]"
+                                class="form-control" required>
+                        </div>
+                        <div class="mb-2 col-6">
+                            <label for="pincode" class="form-label plce">Pincode</label>
+                            <input type="number" value="<%=listing.pincode%>" name="listing[pincode]"
+                                class="form-control" required>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="mb-2 col-6">
+                            <label for="phoneNumber" class="form-label plce">PhoneNumber</label>
+                            <input type="number" value="<%=listing.phoneNumber%>"  name="listing[phoneNumber]" class="form-control" required>
+                        </div>
+    
+                        <div class="mb-2 col-6">
+                            <label for="email" class="form-label plce">Email</label>
+                            <input type="text" value="<%=listing.email%>" name="listing[email]" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="image" class="form-label plce">Upload new Image</label>
+                        <input type="file" name="listing[image]" class="form-control">
+                    </div>
+                    <br>
+
+                    <div class="mb-2 row-2">
+                        <label for="discription" class="form-label plce">discription</label>
+                        <input type="text" name="listing[discription]" value="<%=listing.discription%>"
+                            class="form-control" required>
+                    </div>
+                    <br>
+                    <button class="btn btn-dark add-btn mb-3">Edit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+
+   

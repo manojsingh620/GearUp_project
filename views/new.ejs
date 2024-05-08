@@ -1,0 +1,87 @@
+<% layout("/layouts/boilerplate") -%>
+
+    <div class="row login-page">
+        <div class="col-8 offset-2 ">
+            <div class="heading index-show">
+                <h3>Fill this form to list your car</h3>
+            </div>
+
+            <form action="/listings" method="POST" novalidate class="needs-validation" enctype="multipart/form-data">
+
+                <div class="row ">
+                    <div class="mb-2 col-6 media-box">
+                        <label for="typeName" class="form-label plce">Car model</label>
+                        <input type="text" placeholder="enter your car type/model name" name="listing[typeName]"
+                            class="form-control" required>
+                            <div class="valid-feedback">Nice car</div>
+                            <div class="invalid-feedback">please submit valid car name/model</div>
+                    </div>
+
+                    <br>
+                    <div class="mb-2 col-6 media-box">
+                        <label for="ownName" class="form-label plce">Car owner name</label>
+                        <input type="text" placeholder="Enter car owner Name" name="listing[ownName]"
+                            class="form-control" required>
+                            <div class="invalid-feedback">Please enter valid owner name</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="mb-2 col-6 media-box">
+                        <label for="price" class="form-label plce">Price</label>
+                        <input type="number" placeholder="Enter rent price of / Day" name="listing[price]"
+                            class="form-control" required>
+                            <div class="invalid-feedback">Please enter valid price</div>
+                    </div>
+
+                    <div class="mb-2 col-6 media-box">
+                        <label for="state" class="form-label plce">State</label>
+                        <input type="text" placeholder="Enter your state" name="listing[state]" class="form-control" required>
+                        <div class="invalid-feedback">Please enter valid state</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="mb-2 col-6 media-box">
+                        <label for="location" class="form-label plce">Current Location</label>
+                        <input type="text" placeholder="Enter location " name="listing[location]" class="form-control" required>
+                        <div class="invalid-feedback">Please enter your location</div>
+                    </div>
+
+                    <div class="mb-2 col-6 media-box">
+                        <label for="pincode" class="form-label plce">Pincode</label>
+                        <input type="number" placeholder="Enter Pincode " name="listing[pincode]" class="form-control" required>
+                        <div class="invalid-feedback">Please enter pincode</div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="mb-2 col-6 media-box">
+                        <label for="phoneNumber" class="form-label plce">PhoneNumber</label>
+                        <input type="number" placeholder="Enter phoneNumber " name="listing[phoneNumber]" class="form-control" required><div class="invalid-feedback">Please enter phone number</div>
+                    </div>
+
+                    <div class="mb-2 col-6 media-box">
+                        <label for="email" class="form-label plce">Email</label>
+                        <input type="text" placeholder="Enter email " name="listing[email]" class="form-control" required>
+                        <div class="invalid-feedback">Please enter your email</div>
+                    </div>
+                </div>
+
+                <div class="mb-2">
+                    <label for="image" class="form-label plce">Upload image</label>
+                    <input type="file" name="listing[image]" class="form-control" >
+                </div>
+
+                <div class="mb-2">
+                    <label for="discription" class="form-label plce">Discription</label>
+                    <textarea cols="30" rows="4" placeholder="Enter some discription" name="listing[discription]"
+                        class="form-control" required></textarea>
+                        <div class="invalid-feedback">Please enter some discription of your car</div>
+                </div>
+
+                <button class="btn btn-dark mb-3 add-btn col-8 offset-5">Submit</button>
+            </form>
+        </div>
+    </div>

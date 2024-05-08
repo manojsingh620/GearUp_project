@@ -1,0 +1,14 @@
+/* Log in page style */
+
+.login-page{
+    background-color: #E8E8E8;
+    border-radius: 2rem;
+    /* width: 50%; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.log-text-color{
+    color: #454FD6;
+}

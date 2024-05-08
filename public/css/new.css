@@ -1,0 +1,28 @@
+/* NEW EJS TEMPLATE */
+
+@media(max-width: 600px){
+    .media-box{
+        width: 100% !important;
+    }
+}
+
+.add-btn{
+    background-color:#454FD6 !important;
+    width: 7rem !important;
+    border: none !important;
+    margin-right: 2rem;
+}
+
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.3rem;
+    color: #454FD6;
+    text-decoration: underline;
+}
+
+.plce{
+    font-weight: 600 !important;
+}
